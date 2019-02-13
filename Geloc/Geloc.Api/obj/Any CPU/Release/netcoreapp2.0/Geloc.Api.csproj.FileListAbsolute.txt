@@ -1,0 +1,15 @@
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\bin\Any CPU\Release\netcoreapp2.0\Geloc.Api.deps.json
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\bin\Any CPU\Release\netcoreapp2.0\Geloc.Api.runtimeconfig.json
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\bin\Any CPU\Release\netcoreapp2.0\Geloc.Api.runtimeconfig.dev.json
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\bin\Any CPU\Release\netcoreapp2.0\Geloc.Api.dll
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\bin\Any CPU\Release\netcoreapp2.0\Geloc.Api.pdb
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\bin\Any CPU\Release\netcoreapp2.0\Geloc.Dados.dll
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\bin\Any CPU\Release\netcoreapp2.0\Geloc.Dominio.dll
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\bin\Any CPU\Release\netcoreapp2.0\Geloc.Dados.pdb
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\bin\Any CPU\Release\netcoreapp2.0\Geloc.Dominio.pdb
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\obj\Any CPU\Release\netcoreapp2.0\Geloc.Api.csprojResolveAssemblyReference.cache
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\obj\Any CPU\Release\netcoreapp2.0\Geloc.Api.csproj.CoreCompileInputs.cache
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\obj\Any CPU\Release\netcoreapp2.0\Geloc.Api.AssemblyInfoInputs.cache
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\obj\Any CPU\Release\netcoreapp2.0\Geloc.Api.AssemblyInfo.cs
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\obj\Any CPU\Release\netcoreapp2.0\Geloc.Api.dll
+C:\Users\j_ren\source\repos\Geloc\Geloc.Api\obj\Any CPU\Release\netcoreapp2.0\Geloc.Api.pdb

@@ -1,0 +1,14 @@
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Debug\netcoreapp2.0\Geloc.Dominio.dll
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Debug\netcoreapp2.0\Geloc.Dados.csproj.CoreCompileInputs.cache
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Debug\netcoreapp2.0\Geloc.Dados.AssemblyInfoInputs.cache
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Debug\netcoreapp2.0\Geloc.Dados.AssemblyInfo.cs
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Debug\netcoreapp2.0\Geloc.Dados.deps.json
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Debug\netcoreapp2.0\Geloc.Dados.dll
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Debug\netcoreapp2.0\Geloc.Dados.pdb
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Debug\netcoreapp2.0\Geloc.Dominio.pdb
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Debug\netcoreapp2.0\Geloc.Dados.dll
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Debug\netcoreapp2.0\Geloc.Dados.pdb
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Debug\netcoreapp2.0\Geloc.Dados.runtimeconfig.json
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Debug\netcoreapp2.0\Geloc.Dados.runtimeconfig.dev.json
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Debug\netcoreapp2.0\Geloc.Dados.csprojAssemblyReference.cache
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Debug\netcoreapp2.0\Geloc.Dados.csproj.CopyComplete
