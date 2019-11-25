@@ -34,7 +34,7 @@ namespace Geloc.Api.Controllers
 
             bool credenciaisValidas = false;
 
-            if (usuario != null && !String.IsNullOrWhiteSpace(usuario.Email))
+            if (usuario != null & !String.IsNullOrEmpty(usuario.Email))
 
             {
 

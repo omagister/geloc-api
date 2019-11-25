@@ -5,9 +5,10 @@ C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Release\netcoreapp2.0\Geloc.Da
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Release\netcoreapp2.0\Geloc.Dados.pdb
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Release\netcoreapp2.0\Geloc.Dominio.dll
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\bin\Release\netcoreapp2.0\Geloc.Dominio.pdb
-C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Release\netcoreapp2.0\Geloc.Dados.csprojResolveAssemblyReference.cache
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Release\netcoreapp2.0\Geloc.Dados.csproj.CoreCompileInputs.cache
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Release\netcoreapp2.0\Geloc.Dados.AssemblyInfoInputs.cache
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Release\netcoreapp2.0\Geloc.Dados.AssemblyInfo.cs
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Release\netcoreapp2.0\Geloc.Dados.dll
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Release\netcoreapp2.0\Geloc.Dados.pdb
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Release\netcoreapp2.0\Geloc.Dados.csprojAssemblyReference.cache
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dados\obj\Release\netcoreapp2.0\Geloc.Dados.csproj.CopyComplete

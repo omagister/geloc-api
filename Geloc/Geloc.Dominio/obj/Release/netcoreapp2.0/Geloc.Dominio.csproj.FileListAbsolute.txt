@@ -6,4 +6,4 @@ C:\Users\j_ren\source\repos\Geloc\Geloc.Dominio\obj\Release\netcoreapp2.0\Geloc.
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dominio\obj\Release\netcoreapp2.0\Geloc.Dominio.AssemblyInfo.cs
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dominio\obj\Release\netcoreapp2.0\Geloc.Dominio.dll
 C:\Users\j_ren\source\repos\Geloc\Geloc.Dominio\obj\Release\netcoreapp2.0\Geloc.Dominio.pdb
-C:\Users\j_ren\source\repos\Geloc\Geloc.Dominio\obj\Release\netcoreapp2.0\Geloc.Dominio.csprojResolveAssemblyReference.cache
+C:\Users\j_ren\source\repos\Geloc\Geloc.Dominio\obj\Release\netcoreapp2.0\Geloc.Dominio.csprojAssemblyReference.cache
