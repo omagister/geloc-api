@@ -9048,6 +9048,7 @@
       "type": "package",
       "path": "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -9060,6 +9061,8 @@
       "type": "package",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple/4.3.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple.4.3.0.nupkg.sha512",
@@ -9084,6 +9087,8 @@
       "type": "package",
       "path": "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -9096,6 +9101,8 @@
       "type": "package",
       "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -12515,6 +12522,8 @@
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -14114,11 +14123,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\j_ren\\source\\repos\\Geloc\\Geloc.Api\\Geloc.Api.csproj",
+      "projectUniqueName": "C:\\Users\\j_ren\\source\\repos\\geloc\\geloc.api\\Geloc.Api.csproj",
       "projectName": "Geloc.Api",
-      "projectPath": "C:\\Users\\j_ren\\source\\repos\\Geloc\\Geloc.Api\\Geloc.Api.csproj",
+      "projectPath": "C:\\Users\\j_ren\\source\\repos\\geloc\\geloc.api\\Geloc.Api.csproj",
       "packagesPath": "C:\\Users\\j_ren\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\j_ren\\source\\repos\\Geloc\\Geloc.Api\\obj\\",
+      "outputPath": "C:\\Users\\j_ren\\source\\repos\\geloc\\geloc.api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -14137,11 +14146,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\j_ren\\source\\repos\\Geloc\\Geloc.Dados\\Geloc.Dados.csproj": {
-              "projectPath": "C:\\Users\\j_ren\\source\\repos\\Geloc\\Geloc.Dados\\Geloc.Dados.csproj"
+            "C:\\Users\\j_ren\\source\\repos\\geloc\\Geloc.Dados\\Geloc.Dados.csproj": {
+              "projectPath": "C:\\Users\\j_ren\\source\\repos\\geloc\\Geloc.Dados\\Geloc.Dados.csproj"
             },
-            "C:\\Users\\j_ren\\source\\repos\\Geloc\\Geloc.Dominio\\Geloc.Dominio.csproj": {
-              "projectPath": "C:\\Users\\j_ren\\source\\repos\\Geloc\\Geloc.Dominio\\Geloc.Dominio.csproj"
+            "C:\\Users\\j_ren\\source\\repos\\geloc\\Geloc.Dominio\\Geloc.Dominio.csproj": {
+              "projectPath": "C:\\Users\\j_ren\\source\\repos\\geloc\\Geloc.Dominio\\Geloc.Dominio.csproj"
             }
           }
         }

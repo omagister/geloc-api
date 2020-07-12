@@ -2,6 +2,7 @@
 using Geloc.Dominio;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Geloc.Api.Controllers
 {
@@ -9,13 +10,18 @@ namespace Geloc.Api.Controllers
     [Route("api/enderecosporpessoa")]
     public class EnderecosPorPessoaController : Controller
     {
-        private RetornaDados retorna = new RetornaDados();
+        private readonly Contexto _context;
+
+       public EnderecosPorPessoaController(Contexto context)
+       {
+           _context = context;
+       }
 
         // POST api/enderecosporpessoa/
         [HttpPost("{id}")]
         public IEnumerable<Endereco> RetornaEnderecos(int id)
         {
-            var enderecos = retorna.retornaEnderecosPorPessoa(id);
+            var enderecos = _context.Enderecos.Where(e => e.PessoaId == id).ToList();
             
             return enderecos;
         }

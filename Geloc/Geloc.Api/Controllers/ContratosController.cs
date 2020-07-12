@@ -9,20 +9,25 @@ namespace Geloc.Api.Controllers
     [Route("api/contratos")]
     public class ContratosController : Controller
     {
-        private UnidadeDeTrabalho unidade = new UnidadeDeTrabalho();
+        private readonly Contexto _context;
+
+        public ContratosController(Contexto context)
+        {
+            _context = context;
+        }
 
         // GET api/contratos
         [HttpGet]
         public IEnumerable<Contrato> Get()
         {
-            return unidade.ContratoRepositorio.GetAll();
+            return _context.Contratos;
         }
 
         // GET api/contratos/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var contrato = unidade.ContratoRepositorio.Find(id);
+            var contrato = _context.Contratos.Find(id);
 
             if (contrato == null)
             {
@@ -41,7 +46,7 @@ namespace Geloc.Api.Controllers
                 return BadRequest();
             }
 
-            unidade.ContratoRepositorio.Add(contrato);
+            _context.Contratos.Add(contrato);
 
             return Ok(contrato);
         }
@@ -55,7 +60,7 @@ namespace Geloc.Api.Controllers
                 return BadRequest();
             }
 
-            unidade.ContratoRepositorio.Edit(contrato, id);
+            _context.Contratos.Update(contrato);
 
             return new NoContentResult();
         }
@@ -64,14 +69,14 @@ namespace Geloc.Api.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var contrato = unidade.ContratoRepositorio.Find(id);
+            var contrato = _context.Contratos.Find(id);
 
             if (contrato == null)
             {
                 return NotFound();
             }
 
-            unidade.ContratoRepositorio.Delete(contrato, id);
+            _context.Contratos.Remove(contrato);
 
             return new NoContentResult();
         }

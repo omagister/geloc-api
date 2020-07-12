@@ -10,14 +10,19 @@ namespace Geloc.Api.Controllers
     [Route("api/pessoas")]
     public class PessoasController : Controller
     {
-        private UnidadeDeTrabalho unidade = new UnidadeDeTrabalho();
+        private readonly Contexto _context;
+
+        public PessoasController(Contexto context)
+        {
+            _context = context;
+        }
 
         [Authorize("Bearer")]
         // GET api/pessoas
         [HttpGet]
         public IEnumerable<Pessoa> Get()
         {
-            return unidade.PessoaRepositorio.GetAll();
+            return _context.Pessoas;
         }
 
         [Authorize("Bearer")]
@@ -25,7 +30,7 @@ namespace Geloc.Api.Controllers
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var pessoa = unidade.PessoaRepositorio.Find(id);
+            var pessoa = _context.Pessoas.Find(id);
             
             if (pessoa == null)
             {
@@ -45,7 +50,7 @@ namespace Geloc.Api.Controllers
                 return BadRequest();
             }
 
-            unidade.PessoaRepositorio.Add(pessoa);
+            _context.Pessoas.Add(pessoa);
 
             return Ok(pessoa);
         }
@@ -60,7 +65,7 @@ namespace Geloc.Api.Controllers
                 return BadRequest();
             }
 
-            unidade.PessoaRepositorio.Edit(pessoa, id);
+            _context.Pessoas.Update(pessoa);
 
             return new NoContentResult();
         }
@@ -70,14 +75,14 @@ namespace Geloc.Api.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var pessoa = unidade.PessoaRepositorio.Find(id);
+            var pessoa = _context.Pessoas.Find(id);
 
             if (pessoa == null)
             {
                 return NotFound();
             }
 
-            unidade.PessoaRepositorio.Delete(pessoa, id);
+            _context.Pessoas.Remove(pessoa);
 
             return new NoContentResult();
         }

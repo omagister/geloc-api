@@ -18,7 +18,12 @@ namespace Geloc.Api.Controllers
     [EnableCors("AllowAllOrigins")]
     public class LoginController : Controller
     {
-        private Contexto db = new Contexto();
+        //private Contexto db = new Contexto();
+        private readonly Contexto _context;
+        public LoginController(Contexto context)
+        {
+            _context = context;
+        }
 
         [AllowAnonymous]
         [HttpPost]
@@ -40,7 +45,7 @@ namespace Geloc.Api.Controllers
 
                 //var usuarioBase = usersDAO.Find(usuario.UserId);
                 var usuarioBase = new User();
-                var usuarios = db.Users.Where(u => u.Email == usuario.Email).ToList();
+                var usuarios = _context.Users.Where(u => u.Email == usuario.Email).ToList();
                 if (usuarios.Count > 0)
                 {
                     usuarioBase = usuarios[0];

@@ -9,20 +9,25 @@ namespace Geloc.Api.Controllers
     [Route("api/enderecos")]
     public class EnderecosController : Controller
     {
-        private UnidadeDeTrabalho unidade = new UnidadeDeTrabalho();
+        private readonly Contexto _context;
+
+        public EnderecosController(Contexto context)
+        {
+            _context = context;
+        }
 
         // GET api/enderecos
         [HttpGet]
         public IEnumerable<Endereco> Get()
         {
-            return unidade.EnderecoRepositorio.GetAll();
+            return _context.Enderecos;
         }
 
         // GET api/enderecos/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var endereco = unidade.EnderecoRepositorio.Find(id);
+            var endereco = _context.Enderecos.Find(id);
 
             if (endereco == null)
             {
@@ -41,7 +46,7 @@ namespace Geloc.Api.Controllers
                 return BadRequest();
             }
 
-            unidade.EnderecoRepositorio.Add(endereco);
+            _context.Enderecos.Add(endereco);
 
             return Ok(endereco);
         }
@@ -55,7 +60,7 @@ namespace Geloc.Api.Controllers
                 return BadRequest();
             }
 
-            unidade.EnderecoRepositorio.Edit(endereco, id);
+            _context.Enderecos.Update(endereco);
 
             return new NoContentResult();
         }
@@ -64,14 +69,14 @@ namespace Geloc.Api.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var endereco = unidade.EnderecoRepositorio.Find(id);
+            var endereco = _context.Enderecos.Find(id);
 
             if (endereco == null)
             {
                 return NotFound();
             }
 
-            unidade.EnderecoRepositorio.Delete(endereco, id);
+            _context.Enderecos.Remove(endereco);
 
             return new NoContentResult();
         }

@@ -2,6 +2,7 @@
 using Geloc.Dominio;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Geloc.Api.Controllers
 {
@@ -9,13 +10,18 @@ namespace Geloc.Api.Controllers
     [Route("api/telefonesporpessoa")]
     public class TelefonesPorPessoaController : Controller
     {
-        private RetornaDados retorna = new RetornaDados();
+        private readonly Contexto _context;
+
+        public TelefonesPorPessoaController(Contexto context)
+        {
+            _context = context;
+        }
 
         // POST api/enderecosporpessoa/
         [HttpPost("{id}")]
         public IEnumerable<Telefone> RetornaTelefones(int id)
         {
-            var telefones = retorna.retornaTelefonesPorPessoa(id);
+            var telefones = _context.Telefones.Where(t => t.PessoaId == id);
 
             return telefones;
         }

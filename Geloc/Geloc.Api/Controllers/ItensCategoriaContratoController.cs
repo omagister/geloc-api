@@ -9,20 +9,25 @@ namespace Geloc.Api.Controllers
     [Route("api/itenscategoriacontrato")]
     public class ItensCategoriaContratoController : Controller
     {
-        private UnidadeDeTrabalho unidade = new UnidadeDeTrabalho();
+        private readonly Contexto _context;
+
+        public ItensCategoriaContratoController(Contexto context)
+        {
+            _context = context;
+        }
 
         // GET api/itenscategoriacontrato
         [HttpGet]
         public IEnumerable<ItemCategoriaContrato> Get()
         {
-            return unidade.ItensCategoriaContratoRepositorio.GetAll();
+            return _context.ItensCategoriaContrato;
         }
 
         // GET api/itenscategoriacontrato/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            var itemContrato = unidade.ItensCategoriaContratoRepositorio.Find(id);
+            var itemContrato = _context.ItensCategoriaContrato.Find(id);
 
             if (itemContrato == null)
             {
@@ -41,7 +46,7 @@ namespace Geloc.Api.Controllers
                 return BadRequest();
             }
 
-            unidade.ItensCategoriaContratoRepositorio.Add(itemContrato);
+            _context.ItensCategoriaContrato.Add(itemContrato);
 
             return Ok(itemContrato);
         }
@@ -55,7 +60,7 @@ namespace Geloc.Api.Controllers
                 return BadRequest();
             }
 
-            unidade.ItensCategoriaContratoRepositorio.Edit(itemContrato, id);
+            _context.ItensCategoriaContrato.Update(itemContrato);
 
             return new NoContentResult();
         }
@@ -64,14 +69,14 @@ namespace Geloc.Api.Controllers
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
-            var itemContrato = unidade.ItensCategoriaContratoRepositorio.Find(id);
+            var itemContrato = _context.ItensCategoriaContrato.Find(id);
 
             if (itemContrato == null)
             {
                 return NotFound();
             }
 
-            unidade.ItensCategoriaContratoRepositorio.Delete(itemContrato, id);
+            _context.ItensCategoriaContrato.Remove(itemContrato);
 
             return new NoContentResult();
         }

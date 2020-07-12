@@ -1,9 +1,11 @@
 ﻿using Geloc.Api.Auth;
+using Geloc.Dados;
 using Geloc.Dominio;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
@@ -109,9 +111,11 @@ namespace Geloc.Api
 
             });
 
+           
 
-
-            
+            services.AddDbContext<Contexto>(options => { 
+                options.UseSqlServer(Configuration.GetConnectionString("ConexaoPadrao"));
+            });
 
         
 
@@ -121,20 +125,18 @@ namespace Geloc.Api
     }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Contexto context)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseCors(builder => builder
-                .AllowAnyOrigin()
-                .AllowAnyMethod()
-                .AllowAnyHeader()
-                .AllowCredentials());
-
+            app.UseCors("AllowAllOrigins");
+            
             app.UseMvc();
+
+            //DBInitializer.Initialize(context);
         }
     }
 }
